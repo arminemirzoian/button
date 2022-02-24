@@ -1,5 +1,7 @@
 export const STYLES = [
+    "btn--primary",
     "btn--primary--solid",
+    "btn--secondary",
     "btn--secondary--solid",
     "btn--darkGrey--solid",
     "btn--green--solid",

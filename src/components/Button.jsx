@@ -3,7 +3,7 @@ import './Button.css';
 import {BOX, SIZES, STYLES} from "../helpers/constants";
 
 
-function ButtonReact({children, type, onClick, buttonStyle, buttonSize, boxSize, disabled}) {
+function ButtonReact({children, type, buttonStyle, buttonSize, boxSize, disabled}) {
 
     const Icon = useRef();
     const [isLoading, setIsLoading] = useState(false);
@@ -39,11 +39,10 @@ function ButtonReact({children, type, onClick, buttonStyle, buttonSize, boxSize,
                     type={type}
                     disabled={disabled}>  {isLoading && (
                     <i className="fa fa-refresh fa-spin loader" aria-hidden="true"
-                       style={{marginRight: "5px"}}
                     />
                 )}
                     {isLoading && children}
-                    {!isLoading && <span>BUTTON</span>}
+                    {!isLoading && "BUTTON"}
                 </button>
             </div>
         </div>

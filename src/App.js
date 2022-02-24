@@ -7,10 +7,9 @@ function App() {
         <div className="App">
             <ButtonReact
                 type="button"
-                boxSize="btn--box--middle"
-                buttonStyle="btn--primary--solid"
-                buttonSize="btn--middle"
-                onClick={onclick}
+                boxSize="btn--box--large"
+                buttonStyle="btn--green--outlined"
+                buttonSize="btn--large"
                 disabled={false}
             >BUTTON</ButtonReact>
         </div>
